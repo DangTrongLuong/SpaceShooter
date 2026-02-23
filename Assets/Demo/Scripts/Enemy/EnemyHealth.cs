@@ -5,6 +5,6 @@ public class EnemyHealth : Health
     protected override void Die()
     {
         base.Die();
-        GameManager.Instance.OnEnemyDied();
+        Debug.Log("Enemy died");
     }
 }

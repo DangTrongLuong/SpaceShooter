@@ -5,6 +5,6 @@ public class PlayerHealth : Health
     protected override void Die()
     {
         base.Die();
-        GameManager.Instance.OnPlayerDied();
+        Debug.Log("Player died");
     }
 }
