@@ -6,7 +6,6 @@ public class GameManager : MonoBehaviour
 
     public GameObject gameOverUI;
     public GameObject player;
-    private int enemyCount;
 
     private void Awake()
     {
@@ -15,7 +14,6 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        enemyCount = FindObjectsOfType<EnemyHealth>().Length;
         gameOverUI.SetActive(false);
     }
 
@@ -24,15 +22,6 @@ public class GameManager : MonoBehaviour
         ShowGameOver();
     }
 
-    public void OnEnemyDied()
-    {
-        enemyCount--;
-
-        if (enemyCount <= 0)
-        {
-            ShowGameOver();
-        }
-    }
 
     void ShowGameOver()
     {
