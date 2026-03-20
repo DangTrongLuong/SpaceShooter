@@ -5,7 +5,6 @@ public class Bullet : MonoBehaviour
     public float flySpeed;
     public int damage;
 
-    // Update is called once per frame
     void Update()
     {
         var newPosition = transform.position;

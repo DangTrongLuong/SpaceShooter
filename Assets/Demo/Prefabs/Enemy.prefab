@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2986657897812648783}
   - component: {fileID: -5812882538846181788}
   - component: {fileID: -7013047818893869001}
+  - component: {fileID: -4178721850359963734}
   m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
@@ -31,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.6950788, y: 3.6192272, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 283493669129599869}
@@ -199,6 +200,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   health: {fileID: -5812882538846181788}
   damage: 1
+--- !u!114 &-4178721850359963734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553218369852940119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f0ef7cd2c8a9774aa5c3c60f8c11f4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlyPathAgent
+  flyPath: {fileID: 0}
+  flySpeed: 0
 --- !u!1001 &8289548705518930187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -295,12 +310,12 @@ PrefabInstance:
     - target: {fileID: 8134995565991424630, guid: c2afb2655efdbc74eb0764fa8e6e33ff,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.0000011920929
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 8134995565991424630, guid: c2afb2655efdbc74eb0764fa8e6e33ff,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000002861023
+      value: -1.61
       objectReference: {fileID: 0}
     - target: {fileID: 8134995565991424630, guid: c2afb2655efdbc74eb0764fa8e6e33ff,
         type: 3}
